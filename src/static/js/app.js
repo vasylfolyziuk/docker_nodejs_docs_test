@@ -18,6 +18,9 @@ function TodoListCard() {
         fetch('/items')
             .then(r => r.json())
             .then(setItems);
+        fetch('/items')
+            .then(r => r.json())
+            .then(setItems);
     }, []);
 
     const onNewItem = React.useCallback(
